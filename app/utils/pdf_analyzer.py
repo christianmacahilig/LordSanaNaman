@@ -18,7 +18,7 @@ def extract_text_from_pdf(pdf_path):
     return text.strip()
 
 def extract_sections(text):
-    """Detects and extracts key sections from text."""
+    """Extracts key sections (Title, Introduction, Objectives, Scope & Limitations) using regex patterns."""
     sections = {
         "Title": "",
         "Introduction": "",
@@ -26,22 +26,23 @@ def extract_sections(text):
         "Scope and Limitations": ""
     }
 
+    # **Regex Patterns for Each Section**
     patterns = {
-        "Title": r"(?i)^\s*Title\s*[:\-]?\s*(.+)|^(?!Introduction|Objectives|Scope)([A-Z].{5,100})$",
-        "Introduction": r"(?i)(Introduction|Rationale|Background of the Study)\s*\n(.*?)(?=\n[A-Z][a-z]|$)",
-        "Objectives": r"(?i)(Objectives|Objectives of the Study|Goals|Research Objectives)\s*\n(.*?)(?=\n[A-Z][a-z]|$)",
-        "Scope and Limitations": r"(?i)(Scope and Limitations|Scope and Limitations of the Study|Scope of the Study)\s*\n(.*?)(?=\n[A-Z][a-z]|$)"
+        "Title": r"(?i)^\s*Title\s*[:\-]?\s*(.+)|^(?!Introduction|Objectives|Scope)([A-Z][^\n]{5,100})$",
+        "Introduction": r"(?i)(?:Introduction|Rationale|Background of the Study)\s*\n(.*?)(?=\n[A-Z][a-z]|$)",
+        "Objectives": r"(?i)(?:Objectives|Objectives of the Study|Goals|Research Objectives)\s*\n(.*?)(?=\n[A-Z][a-z]|$)",
+        "Scope and Limitations": r"(?i)(?:Scope and Limitations|Scope and Limitations of the Study|Scope of the Study)\s*\n(.*?)(?=\n[A-Z][a-z]|$)"
     }
 
     for section, pattern in patterns.items():
         match = re.search(pattern, text, re.DOTALL)
         if match:
-            sections[section] = match.group(2).strip() if match.lastindex == 2 else match.group(1).strip()
+            sections[section] = match.group(1).strip()
 
     return sections
 
 if __name__ == "__main__":
-    pdf_path = "sample.pdf"  # Change this to your actual PDF file path
+    pdf_path = "sample.pdf"  # Change to your actual PDF file path
     extracted_text = extract_text_from_pdf(pdf_path)
 
     print("\n=== Full Extracted Text ===")

@@ -27,3 +27,4 @@ def classify_text(text, keywords):
                     it_score += keywords["IT"][word]
 
     return section_scores, cs_score, it_score
+

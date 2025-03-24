@@ -1,46 +1,426 @@
-Keyword,CS_Score,IT_Score
-algorithm,20,5
-network,5,20
-database,10,10
-encryption,20,10
-cybersecurity,20,10
-web,5,20
-machine learning,20,5
-artificial intelligence,20,5
-deep learning,20,5
-neural networks,20,5
-big data,10,15
-cloud computing,10,20
-data mining,20,10
-software engineering,20,10
-programming,20,10
-blockchain,20,10
-computer vision,20,5
-operating systems,20,10
-IoT,10,20
-mobile computing,10,20
-virtualization,10,20
-system administration,5,20
-technical support,5,20
-wireless communication,5,20
-embedded systems,20,5
-network security,15,20
-data structures,20,5
-information retrieval,20,10
-UX/UI design,5,20
-ethical hacking,20,10
-biometrics,15,10
-quantum computing,20,5
-parallel computing,20,5
-augmented reality,10,15
-virtual reality,10,15
-software testing,20,10
-data analytics,15,15
-computer graphics,20,10
-human-computer interaction,15,15
-bioinformatics,20,5
-robotics,20,5
-e-commerce,10,20
-information systems,10,20
-IT management,5,20
-smart systems,15,15
+keyword,CS,IT
+Abstract data type (ADT),20,5
+Abstract method,20,5
+Abstraction,20,5
+Agent architecture,10,10
+Agent-based model (ABM),10,10
+Aggregate function,10,10
+Agile software development,20,5
+Algorithm,20,5
+Algorithm design,20,5
+Algorithmic efficiency,20,5
+American Standard Code for Information Interchange (ASCII),20,5
+Application programming interface (API),10,10
+Application software,5,20
+Array data structure,20,5
+Artifact,10,10
+Artificial intelligence (AI),20,5
+ASCII,20,5
+Assertion,20,5
+Associative array,20,5
+Automata theory,20,5
+Automated reasoning,20,5
+Bandwidth,5,20
+Bayesian programming,20,5
+Benchmark,20,5
+Best, worst, and average case,20,5
+Big data,10,10
+Big O notation,20,5
+Binary number,20,5
+Binary search algorithm,20,5
+Binary tree,20,5
+Bioinformatics,10,10
+Bit,20,5
+Bit rate,5,20
+Blacklist,10,10
+BMP file format,10,10
+Boolean data type,20,5
+Boolean expression,20,5
+Boolean algebra,20,5
+Byte,20,5
+Booting,5,20
+Callback,20,5
+Central processing unit (CPU),20,5
+Character,10,10
+Cipher,20,5
+Class,20,5
+Class-based programming,20,5
+Client,5,20
+Cleanroom software engineering,20,5
+Closure,20,5
+Cloud computing,5,20
+Code library,20,5
+Coding,20,5
+Coding theory,20,5
+Cognitive science,10,10
+Collection,20,5
+Comma-separated values (CSV),10,10
+Compiler,20,5
+Computability theory,20,5
+Computation,20,5
+Computational biology,10,10
+Computational chemistry,10,10
+Computational complexity theory,20,5
+Computational model,10,10
+Computational neuroscience,10,10
+Computational physics,10,10
+Computational science,10,10
+Computational steering,10,10
+Computer,10,10
+Computer architecture,20,5
+Computer data storage,20,5
+Computer ethics,10,10
+Computer graphics,20,5
+Computer network,5,20
+Computer program,20,5
+Computer programming,20,5
+Computer science,20,5
+Computer scientist,20,5
+Computer security,20,10
+Computer vision,20,5
+Computing,10,10
+Concatenation,20,5
+Concurrency,20,5
+Conditional,20,5
+Container,20,5
+Control flow,20,5
+Cryptography,20,10
+Cyberbullying,5,20
+Cyberspace,10,10
+Daemon,20,5
+Data,10,10
+Data center,5,20
+Database,10,10
+Data mining,10,10
+Data science,10,10
+Data structure,20,5
+Data type,20,5
+Debugging,20,5
+Declaration,20,5
+Digital data,10,10
+Digital signal processing (DSP),10,10
+Discrete event simulation (DES),10,10
+Disk storage,5,20
+Distributed computing,10,10
+Divide and conquer algorithm,20,5
+DNS (Domain Name System),5,20
+Documentation,10,10
+Domain,10,10
+Download,5,20
+Edge device,5,20
+Emulator,20,5
+Encryption,20,10
+Event,10,10
+Event-driven programming,20,5
+Evolutionary computing,20,5
+Executable,20,5
+Execution,20,5
+Exception handling,20,5
+Existence detection,10,10
+Expression,20,5
+Fault-tolerant computer system,10,10
+Feasibility study,10,10
+Field,10,10
+Filename extension,10,10
+Filter (software),10,10
+Floating-point arithmetic,20,5
+For loop,20,5
+Formal methods,20,5
+Formal verification,20,5
+Functional programming,20,5
+Game theory,10,10
+Garbage in, garbage out,10,10
+Graphics interchange format,10,10
+Gigabyte,5,20
+Global variable,20,5
+Graph theory,20,5
+Handle,10,10
+Hard problem,20,5
+Hash function,20,5
+Hash table,20,5
+Heap,20,5
+Heapsort,20,5
+Human-computer interaction,10,10
+Identifier,20,5
+IDE (Integrated development environment),20,5
+Image processing,20,5
+Imperative programming,20,5
+Incremental build model,20,5
+Information space analysis,10,10
+Information visualization,10,10
+Inheritance,20,5
+Input,10,10
+Insertion sort,20,5
+Instruction cycle,20,5
+Integer,20,5
+Integration testing,20,5
+Intellectual property,10,10
+Intelligent agent,10,10
+Interface,10,10
+Internal documentation,10,10
+Internet,5,20
+Internet bot,10,10
+Interpreter,20,5
+Iteration,20,5
+Java,20,5
+Kernel,20,5
+Library,20,5
+Linear search,20,5
+Linked list,20,5
+Linker,20,5
+List,20,5
+Loader,20,5
+Logic error,20,5
+Logic programming,20,5
+Machine learning (ML),20,5
+Machine vision (MV),20,5
+Mathematical logic,20,5
+Matrix,10,10
+Memory,20,5
+Merge sort,20,5
+Method,20,5
+Methodology,10,10
+Modem,5,20
+Natural language processing (NLP),20,5
+Node,10,10
+Number theory,20,5
+Numerical analysis,20,5
+Numerical method,20,5
+Object,20,5
+Object code,20,5
+Object-oriented analysis and design (OOAD),20,5
+Object-oriented programming (OOP),20,5
+Open-source software (OSS),20,5
+Operating system (OS),20,5
+Optical fiber,5,20
+Pair programming,10,10
+Parallel computing,20,5
+Parameter,20,5
+Peripheral,5,20
+Pointer,20,5
+Postcondition,20,5
+Precondition,20,5
+Primary storage,20,5
+Primitive data type,20,5
+Priority queue,20,5
+Procedural programming,20,5
+Procedural generation,20,5
+Procedure,20,5
+Program lifecycle phase,20,5
+Programming language,20,5
+Programming language implementation,20,5
+Programming language theory,20,5
+Prolog,20,5
+Python,20,5
+Quantum computing,20,5
+Queue,20,5
+Quicksort,20,5
+R programming language,20,5
+Radix,20,5
+Record,10,10
+Recursion,20,5
+Reference,10,10
+Reference counting,20,5
+Regression testing,20,5
+Relational database,10,10
+Reliability engineering,10,10
+Requirements analysis,10,10
+Robotics,20,5
+Round-off error,20,5
+Router,5,20
+Routing table,5,20
+Run time,20,5
+Run time error,20,5
+Search algorithm,20,5
+Secondary storage,5,20
+Selection sort,20,5
+Semantics,20,5
+Service level agreement,10,10
+Set,20,5
+Singleton variable,20,5
+Software,10,10
+Software agent,20,5
+
+Access point,5,20
+Accessibility,10,10
+ActiveX,5,20
+Address,10,10
+Alias,5,20
+Anonymous FTP,5,20
+Anti-Spam,5,20
+Applet,20,5
+Application,10,10
+ASCII file,10,10
+AT command set,5,20
+Attachment,5,20
+Authentication,10,10
+Backbone,5,20
+Bandwidth,5,20
+BCP (Business Continuity Plan),5,20
+BI (Business Intelligence),20,10
+Binary file,10,10
+BinHex,10,10
+Bit,10,10
+Blended learning,10,10
+Blog,10,10
+Bluetooth,5,20
+BMP (Bitmap file),10,10
+Bookmark,10,10
+Boolean logic,20,5
+Bounce,5,20
+Bridge,5,20
+Broadband connection,5,20
+Browser,5,20
+Buffer,10,10
+Buffered,10,10
+Business continuity,5,20
+Business continuity plan,5,20
+BYOD (Bring Your Own Device),5,20
+Byte,10,10
+Cable modem,5,20
+Cache,10,10
+CAPTCHA,20,5
+Carrier services,5,20
+Case-sensitive,10,10
+CBT (Computer-Based Training),10,10
+CD-R drive,5,20
+CD-ROM,5,20
+CD-RW,5,20
+CGI (Common Gateway Interface),20,5
+Chat,10,10
+Client,5,20
+Client-server technology,20,10
+Cloud computing,20,20
+CMS (Content Management System),20,10
+Compress,10,10
+Connect,10,10
+Cookie,10,10
+Courseware,10,10
+CPU (Central Processing Unit),20,5
+CSP (Cloud Service Provider),5,20
+CSS (Cascading Style Sheet),20,5
+Cursor,10,10
+Cyberspace,10,10
+DaaS (Desktop-as-a-Service),5,20
+Daemon,10,10
+Database,10,10
+Data center,10,10
+Decompress,10,10
+Defragmentation,5,20
+Degauss,5,20
+Desktop,5,20
+DHCP (Dynamic Host Configuration Protocol),5,20
+Dialog box,10,10
+Digital asset,10,10
+Digitize,10,10
+DIMM (Dual In-line Memory Module),5,20
+Directory,10,10
+Disaster recovery,10,10
+DNS (Domain Name System),5,20
+Domain,5,20
+Download,10,10
+DPI (Dots Per Inch),10,10
+DRaaS (Disaster Recovery as a Service),5,20
+DSL (Digital Subscriber Line),5,20
+DVD,5,20
+DVD-RW,5,20
+EAP (Extensible Authentication Protocol),5,20
+EGA (Extended Graphics Adapter),5,20
+E-learning,10,10
+Email,10,10
+Encryption,20,10
+EPS (Encapsulated PostScript),5,20
+Ethernet,5,20
+Expansion card,5,20
+Extension,10,10
+Field,10,10
+File,10,10
+Filter,10,10
+Firewall,20,10
+Flash drive,5,20
+Flash memory,5,20
+Folder,10,10
+Font,10,10
+Freeware,10,10
+FTP (File Transfer Protocol),5,20
+Generative AI,20,10
+GIF (Graphics Interchange Format),10,10
+GPS (Global Positioning System),5,20
+Greyware,5,20
+GUI (Graphical User Interface),20,5
+Handshaking,5,20
+Hard disk,5,20
+Hardware,10,10
+Header,10,10
+Help desk,5,20
+Home page,10,10
+Host,5,20
+HTML (HyperText Markup Language),20,5
+HTTP (HyperText Transfer Protocol),5,20
+Hyperlink,10,10
+Hypertext,10,10
+Hypervisor,5,20
+IaaS (Infrastructure as a Service),5,20
+Icon,10,10
+ICS (Internet Connection Sharing),5,20
+IMAP (Internet Message Access Protocol),5,20
+Internet,10,10
+Internet Explorer,5,20
+IP address,5,20
+IRC (Internet Relay Chat),5,20
+IRQ (Interrupt Request),5,20
+ISP (Internet Service Provider),5,20
+IT Assessment,10,10
+IV&V (Independent Verification and Validation),10,10
+Java,20,5
+JavaScript,20,5
+JPEG (Joint Photographic Experts Group),10,10
+Justified,10,10
+Kbps (Kilobits per second),5,20
+Kerberos,5,20
+LAN (Local Area Network),5,20
+Learning management system (LMS),10,10
+Linux,20,5
+Log in/log on,10,10
+MAC (Media Access Control),5,20
+Malware,20,10
+MDM (Mobile Device Management),5,20
+Megabyte,10,10
+Menu,10,10
+MIME (Multipurpose Internet Mail Extensions),5,20
+Modem,5,20
+Monitor,10,10
+Mouse,10,10
+MPEG (Motion Picture Experts Group),10,10
+Machine Learning,20,10
+Artificial Intelligence,20,10
+Cybersecurity,20,10
+Data Science,20,10
+Data Mining,20,10
+Neural Networks,20,10
+Natural Language Processing (NLP),20,10
+Predictive Modeling,20,10
+API Development,20,10
+RESTful Services,20,10
+Software Engineering,20,10
+DevOps,20,10
+Version Control,20,10
+Git,20,10
+Java,20,10
+Python,20,10
+C++,20,10
+C#,20,10
+JavaScript,20,10
+PHP,20,10
+SQL,20,10
+NoSQL,20,10
+Big Data,20,10
+Data Analytics,20,10
+Blockchain,20,10
+Cryptography,20,10
+IoT (Internet of Things),20,10
+Mobile Development,20,10
+Cloud Storage,20,10
+Risk Assessment,20,10
+Smart Systems,20,10
+Edge Computing,20,10
