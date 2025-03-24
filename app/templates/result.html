@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Classification Results</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Key Sections</th>
+                <th>Computer Science Scores</th>
+                <th>Information Technology Scores</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Title (25%)</td>
+                <td>{{ cs_scores.title }}</td>
+                <td>{{ it_scores.title }}</td>
+            </tr>
+            <tr>
+                <td>Introduction (25%)</td>
+                <td>{{ cs_scores.introduction }}</td>
+                <td>{{ it_scores.introduction }}</td>
+            </tr>
+            <tr>
+                <td>Objectives (25%)</td>
+                <td>{{ cs_scores.objectives }}</td>
+                <td>{{ it_scores.objectives }}</td>
+            </tr>
+            <tr>
+                <td>Scope (25%)</td>
+                <td>{{ cs_scores.scope }}</td>
+                <td>{{ it_scores.scope }}</td>
+            </tr>
+            <tr>
+                <td><strong>Overall Total</strong></td>
+                <td>{{ cs_total }}</td>
+                <td>{{ it_total }}</td>
+            </tr>
+            <tr>
+                <td><strong>Interpretation</strong></td>
+                <td>{{ "Well Aligned" if cs_total >= 70 else "Weak Alignment" }}</td>
+                <td>{{ "Well Aligned" if it_total >= 70 else "Weak Alignment" }}</td>
+            </tr>
+            <tr>
+                <td><strong>Concluded Result</strong></td>
+                <td colspan="2">{{ "Study falls under CS" if cs_total > it_total else "Study falls under IT" }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
