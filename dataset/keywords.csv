@@ -162,7 +162,7 @@ Internet,5,20
 Internet bot,10,10
 Interpreter,20,5
 Iteration,20,5
-Java,20,5
+Java,10,10
 Kernel,20,5
 Library,20,5
 Linear search,20,5
@@ -372,8 +372,8 @@ IRQ (Interrupt Request),5,20
 ISP (Internet Service Provider),5,20
 IT Assessment,10,10
 IV&V (Independent Verification and Validation),10,10
-Java,20,5
-JavaScript,20,5
+Java,10,5
+JavaScript,10,5
 JPEG (Joint Photographic Experts Group),10,10
 Justified,10,10
 Kbps (Kilobits per second),5,20
@@ -406,11 +406,11 @@ Software Engineering,20,10
 DevOps,20,10
 Version Control,20,10
 Git,20,10
-Java,20,10
+Java,10,10
 Python,20,10
 C++,20,10
 C#,20,10
-JavaScript,20,10
+JavaScript,10,10
 PHP,20,10
 SQL,20,10
 NoSQL,20,10
@@ -424,3 +424,9 @@ Cloud Storage,20,10
 Risk Assessment,20,10
 Smart Systems,20,10
 Edge Computing,20,10
+Cloud,20,10
+based,10,10
+management,10,20
+High-Performance,10,10
+Recognition,20,10
+Facial,10,10

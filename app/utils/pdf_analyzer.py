@@ -1,54 +1,79 @@
-import fitz  # PyMuPDF
 import re
+import PyPDF2
+import os
+
+def get_latest_pdf(upload_folder):
+    """Find the most recently uploaded PDF file."""
+    pdf_files = [f for f in os.listdir(upload_folder) if f.endswith(".pdf")]
+    if not pdf_files:
+        print("[ERROR] No PDF files found in the uploads folder.")
+        return None
+    latest_file = max(pdf_files, key=lambda f: os.path.getmtime(os.path.join(upload_folder, f)))
+    return os.path.join(upload_folder, latest_file)
 
 def extract_text_from_pdf(pdf_path):
-    """Extracts text from a PDF file while maintaining order."""
+    """Extracts text from a PDF file and returns structured sections."""
     text = ""
     try:
-        with fitz.open(pdf_path) as doc:
-            for page_num, page in enumerate(doc, start=1):
-                blocks = page.get_text("blocks")
-                blocks.sort(key=lambda b: (b[1], b[0]))  # Sort blocks top-down
-                page_text = "\n".join([b[4] for b in blocks])
-                print(f"\n=== Page {page_num} ===\n{page_text[:1000]}")  # Debug output
-                text += page_text + "\n"
+        with open(pdf_path, "rb") as file:
+            reader = PyPDF2.PdfReader(file)
+            for page in reader.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    text += page_text + "\n"
     except Exception as e:
-        print(f"Error reading PDF: {e}")
+        print(f"[ERROR] Failed to extract text: {e}")
+        return {}
 
-    return text.strip()
+    return extract_text_sections(text)  # Now correctly returning a dictionary
 
-def extract_sections(text):
-    """Extracts key sections (Title, Introduction, Objectives, Scope & Limitations) using regex patterns."""
+def extract_text_sections(pdf_text):
+    """Extracts Title, Introduction, Objectives, and Scope sections."""
+    if not isinstance(pdf_text, str):  
+        print("[ERROR] Expected a string input for section extraction.")
+        return {"title": "", "introduction": "", "objectives": "", "scope": ""}
+
     sections = {
-        "Title": "",
-        "Introduction": "",
-        "Objectives": "",
-        "Scope and Limitations": ""
+        "title": "",
+        "introduction": "",
+        "objectives": "",
+        "scope": ""
     }
+    
+    lines = pdf_text.split("\n")
+    extracted_title = ""
 
-    # **Regex Patterns for Each Section**
-    patterns = {
-        "Title": r"(?i)^\s*Title\s*[:\-]?\s*(.+)|^(?!Introduction|Objectives|Scope)([A-Z][^\n]{5,100})$",
-        "Introduction": r"(?i)(?:Introduction|Rationale|Background of the Study)\s*\n(.*?)(?=\n[A-Z][a-z]|$)",
-        "Objectives": r"(?i)(?:Objectives|Objectives of the Study|Goals|Research Objectives)\s*\n(.*?)(?=\n[A-Z][a-z]|$)",
-        "Scope and Limitations": r"(?i)(?:Scope and Limitations|Scope and Limitations of the Study|Scope of the Study)\s*\n(.*?)(?=\n[A-Z][a-z]|$)"
-    }
+    university_block = [
+        "Republic of the Philippines",
+        "CAVITE STATE UNIVERSITY",
+        "Don Severino de las Alas Campus",
+        "Indang, Cavite"
+    ]
 
-    for section, pattern in patterns.items():
-        match = re.search(pattern, text, re.DOTALL)
-        if match:
-            sections[section] = match.group(1).strip()
+    title_detected = False
+    title_index = -1
+
+    for i in range(len(lines) - len(university_block)):
+        if all(university_block[j] in lines[i + j] for j in range(len(university_block))):
+            title_detected = True
+            title_index = i + len(university_block)
+            break
+
+    if title_detected:
+        for i in range(title_index, len(lines)):
+            line = lines[i].strip()
+            if line and not re.match(r'^\d+$', line) and not any(phrase in line for phrase in university_block):
+                extracted_title = line
+                break
+
+    sections["title"] = extracted_title.strip()
+    
+    intro_match = re.search(r"(?:Introduction|Rationale|Background)[\s\S]+?(?=Objectives|Scope|$)", pdf_text, re.IGNORECASE)
+    obj_match = re.search(r"Objectives[\s\S]+?(?=Scope|Limitations|$)", pdf_text, re.IGNORECASE)
+    scope_match = re.search(r"Scope and Limitations[\s\S]+?(?=$)", pdf_text, re.IGNORECASE)
+
+    sections["introduction"] = intro_match.group(0).strip() if intro_match else ""
+    sections["objectives"] = obj_match.group(0).strip() if obj_match else ""
+    sections["scope"] = scope_match.group(0).strip() if scope_match else ""
 
     return sections
-
-if __name__ == "__main__":
-    pdf_path = "sample.pdf"  # Change to your actual PDF file path
-    extracted_text = extract_text_from_pdf(pdf_path)
-
-    print("\n=== Full Extracted Text ===")
-    print(extracted_text[:3000])  # Print first 3000 characters for debugging
-
-    print("\n=== Extracted Sections ===")
-    sections = extract_sections(extracted_text)
-    for section, content in sections.items():
-        print(f"\n**{section}**\n{content[:500]}")  # Print first 500 characters per section

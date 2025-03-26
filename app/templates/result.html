@@ -9,24 +9,36 @@
             font-family: Arial, sans-serif;
             margin: 20px;
             text-align: center;
+            background-color: #f9f9f9;
         }
         table {
-            width: 60%;
-            margin: 0 auto;
+            width: 70%;
+            margin: 20px auto;
             border-collapse: collapse;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
         th, td {
             border: 1px solid black;
-            padding: 10px;
+            padding: 12px;
             text-align: center;
         }
         th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
             background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
     <h2>Classification Results</h2>
+    <h3>Title: {{ title }}</h3>  <!-- Display Extracted Title -->
+
     <table>
         <thead>
             <tr>
@@ -58,17 +70,17 @@
             </tr>
             <tr>
                 <td><strong>Overall Total</strong></td>
-                <td>{{ cs_total }}</td>
-                <td>{{ it_total }}</td>
+                <td><strong>{{ cs_total }}</strong></td>
+                <td><strong>{{ it_total }}</strong></td>
             </tr>
             <tr>
                 <td><strong>Interpretation</strong></td>
-                <td>{{ "Well Aligned" if cs_total >= 70 else "Weak Alignment" }}</td>
-                <td>{{ "Well Aligned" if it_total >= 70 else "Weak Alignment" }}</td>
+                <td><strong>{{ "Well Aligned" if cs_total >= 70 else "Weak Alignment" }}</strong></td>
+                <td><strong>{{ "Well Aligned" if it_total >= 70 else "Weak Alignment" }}</strong></td>
             </tr>
             <tr>
                 <td><strong>Concluded Result</strong></td>
-                <td colspan="2">{{ "Study falls under CS" if cs_total > it_total else "Study falls under IT" }}</td>
+                <td colspan="2" style="background-color: #ffeb99; font-weight: bold;">{{ "Study falls under CS" if cs_total > it_total else "Study falls under IT" }}</td>
             </tr>
         </tbody>
     </table>
