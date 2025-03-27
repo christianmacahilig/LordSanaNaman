@@ -1,432 +1,509 @@
 keyword,CS,IT
-Abstract data type (ADT),20,5
-Abstract method,20,5
-Abstraction,20,5
-Agent architecture,10,10
-Agent-based model (ABM),10,10
-Aggregate function,10,10
-Agile software development,20,5
-Algorithm,20,5
-Algorithm design,20,5
-Algorithmic efficiency,20,5
-American Standard Code for Information Interchange (ASCII),20,5
-Application programming interface (API),10,10
-Application software,5,20
-Array data structure,20,5
-Artifact,10,10
-Artificial intelligence (AI),20,5
-ASCII,20,5
-Assertion,20,5
-Associative array,20,5
-Automata theory,20,5
-Automated reasoning,20,5
-Bandwidth,5,20
-Bayesian programming,20,5
-Benchmark,20,5
-Best, worst, and average case,20,5
-Big data,10,10
-Big O notation,20,5
-Binary number,20,5
-Binary search algorithm,20,5
-Binary tree,20,5
-Bioinformatics,10,10
-Bit,20,5
-Bit rate,5,20
-Blacklist,10,10
-BMP file format,10,10
-Boolean data type,20,5
-Boolean expression,20,5
-Boolean algebra,20,5
-Byte,20,5
-Booting,5,20
-Callback,20,5
-Central processing unit (CPU),20,5
-Character,10,10
-Cipher,20,5
-Class,20,5
-Class-based programming,20,5
-Client,5,20
-Cleanroom software engineering,20,5
-Closure,20,5
-Cloud computing,5,20
-Code library,20,5
-Coding,20,5
-Coding theory,20,5
-Cognitive science,10,10
-Collection,20,5
-Comma-separated values (CSV),10,10
-Compiler,20,5
-Computability theory,20,5
-Computation,20,5
-Computational biology,10,10
-Computational chemistry,10,10
-Computational complexity theory,20,5
-Computational model,10,10
-Computational neuroscience,10,10
-Computational physics,10,10
-Computational science,10,10
-Computational steering,10,10
-Computer,10,10
-Computer architecture,20,5
-Computer data storage,20,5
-Computer ethics,10,10
-Computer graphics,20,5
-Computer network,5,20
-Computer program,20,5
-Computer programming,20,5
-Computer science,20,5
-Computer scientist,20,5
-Computer security,20,10
-Computer vision,20,5
-Computing,10,10
-Concatenation,20,5
-Concurrency,20,5
-Conditional,20,5
-Container,20,5
-Control flow,20,5
-Cryptography,20,10
-Cyberbullying,5,20
-Cyberspace,10,10
-Daemon,20,5
-Data,10,10
-Data center,5,20
-Database,10,10
-Data mining,10,10
-Data science,10,10
-Data structure,20,5
-Data type,20,5
-Debugging,20,5
-Declaration,20,5
-Digital data,10,10
-Digital signal processing (DSP),10,10
-Discrete event simulation (DES),10,10
-Disk storage,5,20
-Distributed computing,10,10
-Divide and conquer algorithm,20,5
-DNS (Domain Name System),5,20
-Documentation,10,10
-Domain,10,10
-Download,5,20
-Edge device,5,20
-Emulator,20,5
-Encryption,20,10
-Event,10,10
-Event-driven programming,20,5
-Evolutionary computing,20,5
-Executable,20,5
-Execution,20,5
-Exception handling,20,5
-Existence detection,10,10
-Expression,20,5
-Fault-tolerant computer system,10,10
-Feasibility study,10,10
-Field,10,10
-Filename extension,10,10
-Filter (software),10,10
-Floating-point arithmetic,20,5
-For loop,20,5
-Formal methods,20,5
-Formal verification,20,5
-Functional programming,20,5
-Game theory,10,10
-Garbage in, garbage out,10,10
-Graphics interchange format,10,10
-Gigabyte,5,20
-Global variable,20,5
-Graph theory,20,5
-Handle,10,10
-Hard problem,20,5
-Hash function,20,5
-Hash table,20,5
-Heap,20,5
-Heapsort,20,5
-Human-computer interaction,10,10
-Identifier,20,5
-IDE (Integrated development environment),20,5
-Image processing,20,5
-Imperative programming,20,5
-Incremental build model,20,5
-Information space analysis,10,10
-Information visualization,10,10
-Inheritance,20,5
-Input,10,10
-Insertion sort,20,5
-Instruction cycle,20,5
-Integer,20,5
-Integration testing,20,5
-Intellectual property,10,10
-Intelligent agent,10,10
-Interface,10,10
-Internal documentation,10,10
-Internet,5,20
-Internet bot,10,10
-Interpreter,20,5
-Iteration,20,5
-Java,10,10
-Kernel,20,5
-Library,20,5
-Linear search,20,5
-Linked list,20,5
-Linker,20,5
-List,20,5
-Loader,20,5
-Logic error,20,5
-Logic programming,20,5
-Machine learning (ML),20,5
-Machine vision (MV),20,5
-Mathematical logic,20,5
-Matrix,10,10
-Memory,20,5
-Merge sort,20,5
-Method,20,5
-Methodology,10,10
-Modem,5,20
-Natural language processing (NLP),20,5
-Node,10,10
-Number theory,20,5
-Numerical analysis,20,5
-Numerical method,20,5
-Object,20,5
-Object code,20,5
-Object-oriented analysis and design (OOAD),20,5
-Object-oriented programming (OOP),20,5
-Open-source software (OSS),20,5
-Operating system (OS),20,5
-Optical fiber,5,20
-Pair programming,10,10
-Parallel computing,20,5
-Parameter,20,5
-Peripheral,5,20
-Pointer,20,5
-Postcondition,20,5
-Precondition,20,5
-Primary storage,20,5
-Primitive data type,20,5
-Priority queue,20,5
-Procedural programming,20,5
-Procedural generation,20,5
-Procedure,20,5
-Program lifecycle phase,20,5
-Programming language,20,5
-Programming language implementation,20,5
-Programming language theory,20,5
-Prolog,20,5
-Python,20,5
-Quantum computing,20,5
-Queue,20,5
-Quicksort,20,5
-R programming language,20,5
-Radix,20,5
-Record,10,10
-Recursion,20,5
-Reference,10,10
-Reference counting,20,5
-Regression testing,20,5
-Relational database,10,10
-Reliability engineering,10,10
-Requirements analysis,10,10
-Robotics,20,5
-Round-off error,20,5
-Router,5,20
-Routing table,5,20
-Run time,20,5
-Run time error,20,5
-Search algorithm,20,5
-Secondary storage,5,20
-Selection sort,20,5
-Semantics,20,5
-Service level agreement,10,10
-Set,20,5
-Singleton variable,20,5
-Software,10,10
-Software agent,20,5
-
-Access point,5,20
-Accessibility,10,10
-ActiveX,5,20
-Address,10,10
-Alias,5,20
-Anonymous FTP,5,20
-Anti-Spam,5,20
-Applet,20,5
-Application,10,10
-ASCII file,10,10
-AT command set,5,20
-Attachment,5,20
-Authentication,10,10
-Backbone,5,20
-Bandwidth,5,20
-BCP (Business Continuity Plan),5,20
-BI (Business Intelligence),20,10
-Binary file,10,10
-BinHex,10,10
-Bit,10,10
-Blended learning,10,10
-Blog,10,10
-Bluetooth,5,20
-BMP (Bitmap file),10,10
-Bookmark,10,10
-Boolean logic,20,5
-Bounce,5,20
-Bridge,5,20
-Broadband connection,5,20
-Browser,5,20
-Buffer,10,10
-Buffered,10,10
-Business continuity,5,20
-Business continuity plan,5,20
-BYOD (Bring Your Own Device),5,20
-Byte,10,10
-Cable modem,5,20
-Cache,10,10
-CAPTCHA,20,5
-Carrier services,5,20
-Case-sensitive,10,10
-CBT (Computer-Based Training),10,10
-CD-R drive,5,20
-CD-ROM,5,20
-CD-RW,5,20
-CGI (Common Gateway Interface),20,5
-Chat,10,10
-Client,5,20
-Client-server technology,20,10
-Cloud computing,20,20
-CMS (Content Management System),20,10
-Compress,10,10
-Connect,10,10
-Cookie,10,10
-Courseware,10,10
-CPU (Central Processing Unit),20,5
-CSP (Cloud Service Provider),5,20
-CSS (Cascading Style Sheet),20,5
-Cursor,10,10
-Cyberspace,10,10
-DaaS (Desktop-as-a-Service),5,20
-Daemon,10,10
-Database,10,10
-Data center,10,10
-Decompress,10,10
-Defragmentation,5,20
-Degauss,5,20
-Desktop,5,20
-DHCP (Dynamic Host Configuration Protocol),5,20
-Dialog box,10,10
-Digital asset,10,10
-Digitize,10,10
-DIMM (Dual In-line Memory Module),5,20
-Directory,10,10
-Disaster recovery,10,10
-DNS (Domain Name System),5,20
-Domain,5,20
-Download,10,10
-DPI (Dots Per Inch),10,10
-DRaaS (Disaster Recovery as a Service),5,20
-DSL (Digital Subscriber Line),5,20
-DVD,5,20
-DVD-RW,5,20
-EAP (Extensible Authentication Protocol),5,20
-EGA (Extended Graphics Adapter),5,20
-E-learning,10,10
-Email,10,10
-Encryption,20,10
-EPS (Encapsulated PostScript),5,20
-Ethernet,5,20
-Expansion card,5,20
-Extension,10,10
-Field,10,10
-File,10,10
-Filter,10,10
-Firewall,20,10
-Flash drive,5,20
-Flash memory,5,20
-Folder,10,10
-Font,10,10
-Freeware,10,10
-FTP (File Transfer Protocol),5,20
-Generative AI,20,10
-GIF (Graphics Interchange Format),10,10
-GPS (Global Positioning System),5,20
-Greyware,5,20
-GUI (Graphical User Interface),20,5
-Handshaking,5,20
-Hard disk,5,20
-Hardware,10,10
-Header,10,10
-Help desk,5,20
-Home page,10,10
-Host,5,20
-HTML (HyperText Markup Language),20,5
-HTTP (HyperText Transfer Protocol),5,20
-Hyperlink,10,10
-Hypertext,10,10
-Hypervisor,5,20
-IaaS (Infrastructure as a Service),5,20
-Icon,10,10
-ICS (Internet Connection Sharing),5,20
-IMAP (Internet Message Access Protocol),5,20
-Internet,10,10
-Internet Explorer,5,20
-IP address,5,20
-IRC (Internet Relay Chat),5,20
-IRQ (Interrupt Request),5,20
-ISP (Internet Service Provider),5,20
-IT Assessment,10,10
-IV&V (Independent Verification and Validation),10,10
-Java,10,5
-JavaScript,10,5
-JPEG (Joint Photographic Experts Group),10,10
-Justified,10,10
-Kbps (Kilobits per second),5,20
-Kerberos,5,20
-LAN (Local Area Network),5,20
-Learning management system (LMS),10,10
-Linux,20,5
-Log in/log on,10,10
-MAC (Media Access Control),5,20
-Malware,20,10
-MDM (Mobile Device Management),5,20
-Megabyte,10,10
-Menu,10,10
-MIME (Multipurpose Internet Mail Extensions),5,20
-Modem,5,20
-Monitor,10,10
-Mouse,10,10
-MPEG (Motion Picture Experts Group),10,10
-Machine Learning,20,10
-Artificial Intelligence,20,10
-Cybersecurity,20,10
-Data Science,20,10
-Data Mining,20,10
-Neural Networks,20,10
-Natural Language Processing (NLP),20,10
-Predictive Modeling,20,10
-API Development,20,10
-RESTful Services,20,10
-Software Engineering,20,10
-DevOps,20,10
-Version Control,20,10
-Git,20,10
-Java,10,10
-Python,20,10
-C++,20,10
-C#,20,10
-JavaScript,10,10
-PHP,20,10
-SQL,20,10
-NoSQL,20,10
-Big Data,20,10
-Data Analytics,20,10
+5G Technology,5,20
+Access Control,10,20
+Active Directory,5,20
+Adversarial Machine Learning,20,10
+Agile Development,10,20
+Agile Methodology,10,20
+AI Ethics,20,10
+AI for Code Generation,20,10
+AI for Game Development,20,10
+AI in Cybersecurity,10,20
+AI in Drug Discovery,20,10
+AI in Finance,20,10
+AI in Healthcare,20,10
+AI in Legal Tech,20,10
+AI in Robotics,20,10
+AI-Augmented Software Engineering,20,10
+AI-Based Fraud Detection,20,10
+AI-Driven Cybersecurity,10,20
+AI-driven Edge Computing,20,10
+AI-driven Healthcare Diagnostics,20,10
+AI-Generated Content,20,10
+AI-powered Chatbots,20,10
+AI-Powered Medical Imaging,20,10
+AI-powered Recommendation Systems,20,10
+AI-Powered Virtual Assistants,20,10
+Algorithm,20,10
+Algorithm Design,20,10
+Algorithm Efficiency,20,10
+Algorithmic Trading,20,10
+Anomaly Detection,20,10
+API Design,20,10
+API Development,10,20
+API Security,10,20
+Approach,10,10
+Artificial General Intelligence,20,10
+Artificial Intelligence (AI),20,10
+Augmented Analytics,20,10
+Augmented Reality (AR),20,10
+Augmentation,20,10
+Automated Code Review,20,10
+Automated Data Labeling,20,10
+Automated Machine Learning (AutoML),20,10
+Automated Testing,20,10
+Automation,10,20
+Autonomous Systems,20,10
+Autonomous Vehicles,20,10
+Back-End Development,20,10
+Bayesian Reasoning,20,10
+Behavioral Biometrics,10,20
+Big Data,10,20
+Big Data Analytics,10,20
+Big O Notation,20,10
+Bioinformatics,20,5
+Bioinformatics Algorithms,20,10
+Bio-Inspired Computing,20,10
+Biometric Security,10,20
 Blockchain,20,10
+Blockchain in Supply Chain Management,10,20
+Blockchain Interoperability,10,20
+Blockchain Scalability,10,20
+Blockchain Security,20,10
+Blockchain-based Identity Management,10,20
+Bug Tracking,20,10
+Business Intelligence,10,20
+C++ Programming,20,10
+Capacity Planning,10,20
+Cellular Networks,5,20
+Chatbot,20,10
+Cloud Architecture,10,20
+Cloud Computing,10,20
+Cloud Cost Optimization,10,20
+Cloud Data Warehousing,10,20
+Cloud Security,10,20
+Cloud Security Architecture,10,20
+Cloud Security Posture Management,10,20
+Cloud Storage,5,20
+Cloud-Based Collaboration Tools,10,20
+Cloud-native AI Applications,20,10
+Cloud-native Applications,10,20
+Cloud-native Security,10,20
+Coding,10,10
+Cognitive Computing,20,10
+Command Line Interface (CLI),20,10
+Compiler Design,20,5
+Compiler Optimization,20,10
+Computational Geometry,20,5
+Computational Linguistics,20,10
+Computational Neuroscience,20,5
+Computer Architecture,20,10
+Computer Ethics,10,10
+Computer Graphics,20,5
+Computer Networks,10,20
+Computer Science Education,20,10
+Computer Vision,20,10
+Computer Vision Applications,20,10
+Computing Ethics,10,10
+Concurrency,20,10
+Configuration Management,10,20
+Container Security,10,20
+Containerization,10,20
+Convolutional Neural Network,20,10
 Cryptography,20,10
-IoT (Internet of Things),20,10
-Mobile Development,20,10
-Cloud Storage,20,10
-Risk Assessment,20,10
+Cyber Deception,10,20
+Cyber Insurance,5,20
+Cyber Threat Intelligence,10,20
+Cyber-Physical Systems,10,20
+Cyber-Resilience,10,20
+Cybersecurity,10,20
+Cybersecurity Awareness Training,10,20
+Cybersecurity Compliance,10,20
+Cybersecurity in Smart Homes,10,20
+Cybersecurity Law,10,20
+Data,10,10
+Data Aggregation,10,20
+Data Analytics,20,10
+Data Anonymization,10,20
+Data Backup,5,20
+Data Center Management,5,20
+Data Cleaning,10,20
+Data Encryption,10,20
+Data Engineering,20,10
+Data Federation,10,20
+Data Fusion Techniques,20,10
+Data Governance,5,20
+Data Governance Strategies,10,20
+Data Integration,10,20
+Data Masking Techniques,10,20
+Data Mining,20,10
+Data Modeling,10,20
+Data Pipelines,10,20
+Data Privacy,20,10
+Data Privacy Regulations,10,20
+Data Science,20,10
+Data Science Workflow Automation,20,10
+Data Sovereignty,10,20
+Data Structures,20,10
+Data Warehousing,10,20
+Database,10,20
+Database Administration,5,20
+Database Performance Tuning,10,20
+Database Replication,10,20
+Database Security,10,20
+Database Sharding,10,20
+Debugging,20,10
+Debugging Tools,20,10
+Decentralized Finance (DeFi),10,20
+Decentralized Identity Management,10,20
+Deep Learning,20,10
+Deep Learning for Natural Language Processing,20,10
+Deepfake Detection,20,10
+Defensive Programming,20,10
+Deployment,10,20
+Design Thinking,10,20
+DevOps,10,20
+Development,10,20
+Digital Ethics,10,10
+Digital Evidence Forensics,10,20
+Digital Forensics,10,20
+Digital Identity Management,10,20
+Digital Literacy,10,10
+Digital Payment Security,10,20
+Digital Rights Management,10,20
+Digital Rights Management (DRM),10,20
+Digital Twin,20,10
+Digital Twin Technology,10,20
+Distributed Computing,20,10
+Distributed Systems,20,10
+DNS Security,10,20
+Docker,10,20
+Edge AI,20,10
+Edge AI for Smart Cities,20,10
+Edge AI Security,10,20
+Edge Computing,10,20
+Edge Computing for IoT,10,20
+Edge Computing Security,10,20
+Embedded AI,20,10
+Embedded Systems,20,10
+Encryption,20,10
+Energy-Efficient Computing,20,10
+Enterprise Architecture,5,20
+Enterprise Network Security,10,20
+Ethical AI,10,10
+Ethical AI Design,10,20
+Ethical Hacking,10,20
+Enchance,10,10
+E-Commerce,10,20
+Event-Driven Architecture,10,20
+Evolutionary Algorithms,20,10
+Explainable AI,20,10
+Explainable AI in Finance,20,10
+Explainable AI in Healthcare,20,10
+Explainable Neural Networks,20,10
+Explainable Reinforcement Learning,20,10
+Exploratory Data Analysis,20,10
+Facial Recognition,20,10
+Facial Recognition Security,20,10
+Facial Recognition Technologies,20,10
+Fault Tolerance,10,20
+Federated Authentication,10,20
+Federated Identity Management,10,20
+Federated Learning,20,10
+Federated Learning for Healthcare,20,10
+Firewall,10,20
+FSL gestures,20,10
+Framework,20,10
+Fog Computing,10,20
+Forensic Computing,10,20
+Fraud Detection,10,20
+Full-Stack Development,20,10
+Functional Programming,20,5
+Functional Testing,10,20
+Fuzzy Logic,20,10
+Game Development,20,10
+Game Theory,20,10
+Gamification,10,20
+Genetic Algorithms,20,10
+GitHub,10,10
+GPU Programming,20,10
+Graph Databases,10,20
+Graph Neural Networks,20,10
+Graph-Based Machine Learning,20,10
+Green AI,10,20
+Green Computing,10,10
+Grid Computing,10,20
+Hadoop,10,20
+Hardware,5,20
+Hardware Security,10,20
+Healthcare IT Security,10,20
+High Availability,10,20
+High-Performance Computing,20,10
+High-Performance Computing (HPC),20,10
+Homomorphic Encryption,20,10
+HTML (HyperText Markup Language),10,10
+Human-Computer Interaction,20,10
+Hybrid AI Models,20,10
+Hybrid Cloud,5,20
+Hybrid Cloud Integration,10,20
+Hybrid Encryption,10,20
+IaaS (Infrastructure as a Service),5,20
+Identity and Access Management,10,20
+Identity and Access Management (IAM),10,20
+Image Classification,20,10
+Image Processing,20,10
+Incident Handling,10,20
+Incident Response,10,20
+Industrial IoT,10,20
+Information Retrieval,20,10
+Integration,10,20
+Intelligent Process Automation,10,20
+Internet Governance,10,20
+Internet of Behaviors,10,20
+Internet of Things (IoT),10,20
+Interpretable Machine Learning,20,10
+Intrusion Detection Systems,10,20
+IoT Device Security,10,20
+IoT Security Frameworks,10,20
+IoT-enabled Smart Agriculture,10,20
+IoT-Enabled Smart Homes,10,20
+IT Asset Management,5,20
+IT Automation,10,20
+IT Compliance,5,20
+IT Disaster Recovery Planning,10,20
+IT Governance,5,20
+IT Infrastructure,5,20
+IT Infrastructure Management,10,20
+IT Risk Management,10,20
+IT Service Management,5,20
+Java,20,10
+JavaScript,20,10
+Jenkins,10,20
+Job Scheduling,10,20
+K-Means Clustering,20,10
+K-Means,20,10
+Kinect-Based,20,10
+Knowledge Representation,20,10
+Kubernetes,10,20
+Kubernetes Security,10,20
+Large Language Models,20,10
+LIDAR Processing,20,10
+Load Balancing,10,20
+Log Management,10,20
+Low-Code and No-Code Development,10,20
+Low-Code Development,5,20
+Low-Code/No-Code Development,10,20
+Low-Latency Computing,10,20
+Low-Power AI Systems,20,10
+Machine Ethics,20,10
+Machine Learning,20,10
+Machine Vision,20,10
+Market,10,10
+Malware Analysis,10,20
+Malware Detection,10,20
+Malware Reverse Engineering,10,20
+Marketplace,10,10
+Mesh Networks,10,20
+Metaverse,10,20
+Metaverse Security,10,20
+Metaverse Technologies,10,20
+Microservices,10,20
+Microservices Architecture,10,20
+Microservices Architecture,20,10
+Microservices Security,10,20
+Middleware,10,20
+Mixed Reality,20,10
+Mobile AI Applications,20,10
+Mobile App Security,10,20
+Mobile Development,10,20
+Mobile Security,10,20
+Model Compression,20,10
+Model,10,10
+Modeling,10,10
+Monte Carlo Methods,20,10
+Multi-Agent Systems,20,10
+Multi-Cloud Security Strategies,10,20
+Multi-Cloud Strategy,10,20
+Multi-Factor Authentication,10,20
+Multimodal AI,20,10
+Multi-Modal AI,20,10
+Multi-Threading,20,10
+Natural Computation,20,10
+Natural Language Processing,20,10
+Natural Language Processing (NLP),20,10
+Natural Language Understanding,20,10
+Network Administration,5,20
+Network Forensics,10,20
+Network Security,10,20
+Network Security Policies,10,20
+Neural Architecture Search,20,10
+Neural Network Optimization,20,10
+Neural Network Pruning,20,10
+Neural Networks,20,10
+Neuromorphic Computing,20,10
+Next-Generation Firewalls,10,20
+Netlogo,20,10
+NLP for Business Intelligence,20,10
+NoSQL,10,20
+NoSQL Databases,10,20
+Numerical Computing,20,10
+Object Detection,20,10
+Object-Oriented Programming (OOP),20,10
+Online Privacy Enhancing Technologies,10,20
+Online Privacy Policies,10,20
+Ontology Engineering,20,10
+Open Source Software,10,10
+Open-Source Cybersecurity Tools,10,20
+Operating Systems,20,10
+Optical Character Recognition,20,10
+Optical Character Recognition (OCR),20,10
+Optimization,20,10
+PaaS (Platform as a Service),5,20
+Parallel Computing,20,10
+Parallel Processing,20,10
+Penetration Testing,10,20
+Performance Engineering,10,20
+Post-Quantum Cryptography,10,20
+Post-Quantum Cryptography,20,10
+Predictive Analytics,20,10
+Predictive Maintenance using AI,20,10
+Predictive Modeling,20,10
+Privacy Engineering,10,20
+Privacy-Enhancing Computation,10,20
+Privacy-Focused AI,10,20
+Privacy-Preserving AI,20,10
+Privacy-Preserving Computing,10,20
+Platform,10,20
+Online,10,10
+Programming,10,10
+Python,10,10
+Quantum AI Applications,20,10
+Quantum Computing,20,5
+Quantum Cryptography,20,5
+Quantum Cryptography,20,10
+Quantum Machine Learning,20,10
+Queueing Theory,20,5
+Ransomware Prevention,10,20
+Real-time AI for Cyber Defense,20,10
+Realtime Systems,20,10
+Red Teaming,10,20
+Regression Analysis,20,10
+RegTech (Regulatory Technology),10,20
+Reinforcement Learning,20,10
+Recognition System,20,10
+Remote Access Security,10,20
+Remote Code Execution,10,20
+Remote Work Cybersecurity,10,20
+Remote Work Security,10,20
+RESTful Services,10,20
+Risk Assessment,10,20
+Robotic Process Automation,10,20
+Robotic Process Automation (RPA),10,20
+SaaS (Software as a Service),5,20
+Scalability,10,20
+Scalable Databases,10,20
+Scrum Framework,10,20
+Secure Cloud Storage,10,20
+Secure Coding,20,10
+Secure Data Lakes,10,20
+Secure Data Sharing Techniques,10,20
+Secure Federated Learning,10,20
+Secure Multi-Cloud Computing,10,20
+Secure Multi-Party Computation,10,20
+Secure Software Development,10,20
+Security,10,20
+Self-Adaptive AI Systems,20,10
+Self-Healing Networks,10,20
+Self-Healing Systems,10,20
+Self-Healing Systems,20,10
+Self-Supervised Learning,20,10
+Semantic Web,20,10
+Sentiment Analysis,20,10
+Server Administration,5,20
+Serverless Computing,10,20
+Serverless Security,10,20
+Site Reliability Engineering,10,20
+Simulation,20,10
+Smart Cities,10,20
+Smart Contracts,20,10
+Smart Contracts,10,20
+Smart Grid Security,10,20
 Smart Systems,20,10
-Edge Computing,20,10
-Cloud,20,10
-based,10,10
-management,10,20
-High-Performance,10,10
-Recognition,20,10
-Facial,10,10
+Smart Engineering,20,10
+Social Engineering Prevention,10,20
+Software,10,10
+Software Architecture,20,10
+Software Auditing,10,20
+Software Defined Networking (SDN),10,20
+Software Development,10,20
+Software Engineering,20,10
+Software Licensing,10,10
+Software Quality Assurance,10,20
+Software Security Patching,10,20
+Software Supply Chain Security,10,20
+Software-defined Networking,10,20
+Space Computing,20,10
+Spark,10,20
+Speech Recognition,20,10
+Speech Synthesis,20,10
+Speech-to-Text AI,20,10
+SQL,10,20
+Statistical Learning,20,10
+Supply Chain Cybersecurity,10,20
+Swarm Intelligence,20,10
+Synthetic Data Generation,10,20
+System,10,10
+Testing,10,20
+Threat Hunting,10,20
+Threat Hunting in Cybersecurity,10,20
+Threat Intelligence,10,20
+Threat Intelligence Platforms,10,20
+Threat Modeling,10,20
+Time Series Forecasting,20,10
+Token-Based Authentication,10,20
+Tokenization,10,20
+Traffic Analysis,10,20
+Traffic Encryption,10,20
+Trust Computing,10,20
+Trusted Execution Environments,10,20
+Trustless Systems,10,20
+Trustworthy AI,10,20
+Trustworthy Computing,10,20
+Trustworthy Federated Learning,10,20
+Turing Completeness,20,10
+Turing Machines,20,5
+Ubiquitous Computing,20,10
+UI/UX Design,10,20
+UI/UX Prototyping,10,20
+UML (Unified Modeling Language),20,10
+Unsupervised Learning,20,10
+Usable Security,10,20
+User Authentication Methods,10,20
+User Authentication Systems,10,20
+User Behavior Analytics,10,20
+User Experience Design,10,20
+User friendly,10,20
+Vector Databases,20,10
+Virtual Machines,10,20
+Virtual Memory,20,10
+Virtual Reality (VR),20,10
+Virtual Reality in Education,20,10
+Virtual Reality Training,20,10
+Virtualization,10,20
+Voice Recognition Systems,20,10
+VPN (Virtual Private Network),10,20
+Vulnerability Scanning,10,20
+Wearable Computing,10,20
+Wearable Health Monitoring,10,20
+Web 3.0 Technologies,10,20
+Web Accessibility Standards,10,20
+Web Application Firewall (WAF),10,20
+Web Application Security,10,20
+Web-based,20,10
+Web Development,20,10
+Web Scraping,20,10
+Web Security,10,20
+Web3-based Digital Identity,10,20
+WebAssembly,20,10
+Wireless AI Networks,10,20
+Wireless Network Intrusion Detection,10,20
+Wireless Network Security,10,20
+Wireless Networking,10,20
+Wireless Sensor Networks,10,20
+XAI (Explainable AI),20,10
+Zero Trust Architecture,10,20
+Zero Trust Security,10,20
+Zero-Day Exploits,10,20
+Zero-Day Threat Mitigation,10,20
+Zero-Day Vulnerability Detection,10,20
+Zero-Knowledge Proofs,10,20
