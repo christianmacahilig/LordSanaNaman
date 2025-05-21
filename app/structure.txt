@@ -1,0 +1,19 @@
+folder structure:
+/ProposalFiltering
+│── app/
+│   ├── utils/
+│   │   ├── pdf_analyzer.py  # Extracts text from PDFs
+│   │   ├── nlp_processor.py # NLP-based classification (NER + Keyword Matching)
+│   │   ├── csv_loader.py     # Loads keyword dataset (CSV)
+│   ├── main.py              # Main execution file
+│   ├── results/             # Stores generated CSV results
+│   ├── templates/
+│   │   ├── index.html        # Upload UI
+│   │   ├── result.html       # Display classification results (table format)
+│   ├── static/
+│   │   ├── style.css         # CSS for UI
+│── uploads/                 # Folder for uploaded PDFs
+│── dataset/                 
+│   ├── keywords.csv          # CSV dataset of CS & IT keywords with scores
+│── requirements.txt          # Dependencies
+│── README.md                 # Documentation

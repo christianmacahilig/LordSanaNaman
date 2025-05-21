@@ -6,71 +6,231 @@
     <title>Classification Results</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Poppins', sans-serif;
+            margin: 30px;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        h2, h3 {
             text-align: center;
+            color: #2c3e50;
         }
         table {
-            width: 60%;
-            margin: 0 auto;
+            width: 85%;
+            margin: 25px auto;
             border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         th, td {
-            border: 1px solid black;
-            padding: 10px;
+            padding: 14px;
             text-align: center;
+            border-bottom: 1px solid #e0e0e0;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #27ae60;
+            color: white;
+            font-size: 15px;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        tr:hover {
+            background-color: #ecf0f1;
+        }
+        .highlight {
+            background-color: #ffeb99;
+            font-weight: bold;
+        }
+        .match {
+            background-color: #d4edda;
+            font-weight: bold;
+        }
+        .checkmark {
+            color: green;
+            font-size: 18px;
+        }
+        .crossmark {
+            color: red;
+            font-size: 18px;
+        }
+        u {
+            text-decoration-color: #27ae60;
+        }
+        strong {
+            color: #2d3436;
+        }
+        .error {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .back-home-btn {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .back-home-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
     <h2>Classification Results</h2>
+    <h3><strong>Title:</strong> {{ title }}</h3>
+
+    <!-- Supplementary Score Comparison Table -->
+    <h3>Supplementary Checklists</h3>
     <table>
         <thead>
             <tr>
                 <th>Key Sections</th>
-                <th>Computer Science Scores</th>
-                <th>Information Technology Scores</th>
+                <th>Computer Science</th>
+                <th>Information Technology</th>
             </tr>
         </thead>
         <tbody>
+            {% for section in ['title', 'introduction', 'objectives', 'scope'] %}
             <tr>
-                <td>Title (25%)</td>
-                <td>{{ cs_scores.title }}</td>
-                <td>{{ it_scores.title }}</td>
+                <td>{{ section|capitalize }}</td>
+                <td>
+                    {% if cs_scores[section] > it_scores[section] %}
+                        <span class="checkmark">✓</span>
+                    {% elif cs_scores[section] < it_scores[section] %}
+                        <span class="crossmark">✗</span>
+                    {% else %}
+                        <span class="checkmark">✓</span>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if it_scores[section] > cs_scores[section] %}
+                        <span class="checkmark">✓</span>
+                    {% elif it_scores[section] < cs_scores[section] %}
+                        <span class="crossmark">✗</span>
+                    {% else %}
+                        <span class="checkmark">✓</span>
+                    {% endif %}
+                </td>
             </tr>
-            <tr>
-                <td>Introduction (25%)</td>
-                <td>{{ cs_scores.introduction }}</td>
-                <td>{{ it_scores.introduction }}</td>
-            </tr>
-            <tr>
-                <td>Objectives (25%)</td>
-                <td>{{ cs_scores.objectives }}</td>
-                <td>{{ it_scores.objectives }}</td>
-            </tr>
-            <tr>
-                <td>Scope (25%)</td>
-                <td>{{ cs_scores.scope }}</td>
-                <td>{{ it_scores.scope }}</td>
-            </tr>
-            <tr>
-                <td><strong>Overall Total</strong></td>
-                <td>{{ cs_total }}</td>
-                <td>{{ it_total }}</td>
-            </tr>
-            <tr>
-                <td><strong>Interpretation</strong></td>
-                <td>{{ "Well Aligned" if cs_total >= 70 else "Weak Alignment" }}</td>
-                <td>{{ "Well Aligned" if it_total >= 70 else "Weak Alignment" }}</td>
-            </tr>
-            <tr>
-                <td><strong>Concluded Result</strong></td>
-                <td colspan="2">{{ "Study falls under CS" if cs_total > it_total else "Study falls under IT" }}</td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
+
+    <!-- Classification Result Table -->
+    <table>
+        <tr class="highlight">
+            <td><strong>Concluded Result</strong></td>
+            <td colspan="2">
+                {% if cs_total > it_total %}
+                    The study is aligned with <u>Computer Science (CS)</u>.
+                {% else %}
+                    The study is aligned with <u>Information Technology (IT)</u>.
+                {% endif %}
+                <br>
+            </td> 
+        </tr>
+        <tr class="highlight">
+            <td><strong>Selected Course Matching</strong></td>
+            <td colspan="2"> 
+                <em>Original Selected Course: {{ selected_course }}</em> <br><br>
+                {% if (selected_course == "CS" and it_total > cs_total) or (selected_course == "IT" and cs_total > it_total) %}
+                    <strong>Note:</strong> <span class="error">There's a mismatch between the selected course and the computed result.</span>
+                {% else %}
+                    <strong>✔ Match:</strong> The selected course aligns with the classification.
+                {% endif %}
+            </td>
+        </tr>
+
+        {% set top_keywords = [] %}
+        {% set prev = "" %}
+        {% for kw in extracted_keywords %}
+            {% if kw != prev and kw not in top_keywords %}
+                {% set _ = top_keywords.append(kw.strip()) %}
+            {% endif %}
+            {% set prev = kw %}
+        {% endfor %}
+
+        {% set top_keywords = top_keywords[:5] %}
+        {% set keyword_count = top_keywords | length %}
+
+        <tr class="match">
+            <td><strong>Explanation</strong></td>
+            <td colspan="2">
+                Based on keyword analysis, this research is classified as 
+                {% if cs_total > it_total %}
+                    <strong>Computer Science</strong>
+                {% else %}
+                    <strong>Information Technology</strong>
+                {% endif %}
+                due to its emphasis on
+                {% if extracted_keywords|length == 1 %}
+                    <strong>{{ extracted_keywords[0] }}</strong>.
+                {% elif extracted_keywords|length == 2 %}
+                    <strong>{{ extracted_keywords[0] }}</strong> and <strong>{{ extracted_keywords[1] }}</strong>.
+                {% else %}
+                    {% for keyword in extracted_keywords[:-1] %}
+                        <strong>{{ keyword }}</strong>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                    and <strong>{{ extracted_keywords[-1] }}</strong>.
+                {% endif %}
+            </td>
+        </tr>
+
+        <tr class="match">
+            <td><strong>Alignment and Enhancement Suggestion</strong></td>
+            <td colspan="2">
+                {% set highest_score = cs_total if cs_total > it_total else it_total %}
+        
+                {% if highest_score >= 90 %}
+                    <strong>Full Alignment:</strong> None, the use of keywords is strong in this study.
+                {% elif highest_score >= 80 %}
+                    <strong>Strong Alignment:</strong> {{ enhancement_suggestion }}
+                {% elif highest_score >= 70 %}
+                    <strong>Moderate Alignment:</strong> {{ enhancement_suggestion }}
+                {% elif highest_score >= 50 %}
+                    <strong>Basic Alignment:</strong>  {{ enhancement_suggestion }}
+                {% else %}
+                    <strong>Minimal Alignment:</strong> 
+                    <span class="error">Needs a human expert for validation, all sections are weak.</span>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+
+    <!-- Back to Home Button -->
+    <div class="back-home">
+        <a href="{{ url_for('index') }}" class="back-home-btn" role="button">← Back to Home</a>
+    </div>
+
+    <!-- JavaScript to Measure Load Time -->
+    <script>
+        const startTime = performance.now();
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const endTime = performance.now();
+            const loadTime = ((endTime - startTime) / 1000).toFixed(2);
+
+            const timerDisplay = document.createElement('div');
+            timerDisplay.style.textAlign = "center";
+            timerDisplay.style.marginTop = "20px";
+            timerDisplay.style.fontWeight = "bold";
+            timerDisplay.style.color = "#2980b9";
+            timerDisplay.innerText = `Page loaded in ${loadTime} seconds.`;
+
+            document.querySelector('.back-home').appendChild(timerDisplay);
+        });
+    </script>
 </body>
 </html>
