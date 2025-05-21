@@ -38,6 +38,12 @@ Classification & Match Check
 The system sums the scores for CS and IT. The higher total determines the classification.
 
 The result is compared with the user's selected course to determine a match or mismatch.
+![4_CONCLUSION](https://github.com/user-attachments/assets/4eac815f-a192-4b99-8412-b0937b6353de)
+![3_CHECKLIST RESULTS](https://github.com/user-attachments/assets/6d93611f-292f-4783-a671-7efe43d56f78)
+![2_UPLOAD FILE](https://github.com/user-attachments/assets/728afc0b-407f-4350-bab2-3f20bb72b165)
+![1_HOMEPAGE](https://github.com/user-attachments/assets/80b83d33-dd80-4802-84b1-10ae799e460b)
+
+
 
 Checklist Display
 
